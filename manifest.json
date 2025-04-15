@@ -1,0 +1,80 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§d§lAxolotl Shield §r",
+		"description": "§ePack Made By §bBigGamers4u\n§eVersion §b1.2\n§fThe pack changes the shield to be an axolotl in a bucket",
+		"min_engine_version": [1, 20, 80],
+		"uuid": "fb7f8fd0-d470-49ea-ae87-505441b37fd3",
+		"version": [1, 20, 80]
+	},
+	"modules": [
+		{
+			"description": "§ePack Made By §bBigGamers4u\nThe pack changes the shield to be an axolotl in a bucket",
+			"type": "resources",
+			"uuid": "1c8ebea5-2664-4dce-821f-b88f12af9fad",
+			"version": [0, 0, 1]
+		}
+	],
+	"subpacks":[
+		{
+			"folder_name":"gold-java-Complex Left Hand",
+			"name":"§f§lGold Axolotl Texture §r/ §bJava Shield §r/ §bComplex Left Hand Animations §r\n§eTurn the shield 90 degrees\n§6This makes the shield compatible to Complex Left Hand",
+			"memory_tier":0
+		},
+		{
+			"folder_name":"gold-Complex Left Hand",
+			"name":"§f§lGold Axolotl Texture §r/ §bComplex Left Hand Animations §r\n§6This makes the shield compatible to Complex Left Hand",
+			"memory_tier":0
+		},
+		{
+			"folder_name":"gold-java",
+			"name":"§f§lGold Axolotl Texture §r/ §bJava Shield §r\n§eTurn the shield 90 degrees",
+			"memory_tier":0
+		},
+		{
+			"folder_name":"gold",
+			"name":"§f§lGold Axolotl Texture §r/ §bDifferent Pack Shield Animations",
+			"memory_tier":0
+		},
+		{
+		  "folder_name":"brown",
+		  "name":"§f§lBrown Axolotl Texture §r/ §bDifferent Pack Shield Animations",
+		  "memory_tier":0
+		},
+		{
+			"folder_name":"yellow",
+			"name":"§f§lYellow Axolotl Texture §r/ §bDifferent Pack Shield Animations",
+			"memory_tier":0
+		},
+		{
+			"folder_name":"cyan",
+			"name":"§f§lCyan Axolotl Texture §r/ §bDifferent Pack Shield Animations",
+			"memory_tier":0
+		},
+		{
+			"folder_name":"blue",
+			"name":"§f§lBlue Axolotl Texture §r/ §bDifferent Pack Shield Animations",
+			"memory_tier":0
+		},
+		{
+			"folder_name":"Complex Left Hand",
+			"name":"§f§lComplex Left Hand Animations §r\n§6This makes the shield compatible to Complex Left Hand",
+			"memory_tier":0
+		},
+		{
+		   "folder_name":"Visible Offhand",
+		   "name":"§f§lDifferent Pack Shield Animations §r\n§6This option doen't have an animation for the shield, so that means if you have a pack that uses the shield animation, pick this option",
+		   "memory_tier":0
+		},
+		{
+		   "folder_name":"java",
+		   "name":"§f§lJava Shield§r\n§eTurn the shield 90 degrees",
+		   "memory_tier":0
+		},
+		{
+		  "folder_name":"default",
+		  "name":"§f§lDefault",
+		  "memory_tier":0
+	   }
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.shield.wield_main_hand_first_person": {
+			"loop": true,
+			"bones": {
+				"shield": {
+					"rotation": [152.43088, 4.01173, 43.78183],
+					"position": [11.87348, 22.49715, 2.27601]
+				}
+			},
+			"timeline": {
+				"0.0": "v.has_blocked = 0;"
+			}
+		},
+		"animation.shield.wield_off_hand_first_person": {
+			"loop": true,
+			"blend_weight": "v.shield_offset = math.lerp((v.shield_offset ?? 0),(query.get_equipped_item_name == 'crossbow' && query.item_is_charged),0.1);return 1;",
+			"bones": {
+				"shield": {
+					"rotation": [
+						"v.shield_offset = math.lerp((v.shield_offset ?? 0),(query.get_equipped_item_name == 'crossbow' && query.item_is_charged),0.1); return 1;",
+						"91 - v.shield_offset * 30",
+						-1.8
+					],
+					"position": [-12.5, "-8-5.8 * 0", "variable.is_using_bow ? -25 : 11.5"]
+				}
+			},
+			"timeline": {
+				"0.0": "v.has_blocked = 0;"
+			}
+		},
+		"animation.shield.wield_main_hand_first_person_blocking": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"shield": {
+					"rotation": [91, "65 - 12.0", -43],
+					"position": {
+						"0.0": ["7.8636 - 2", "28.4064 - (v.has_blocked ?? 0) * 2", "2.3076 - (v.has_blocked ?? 0) * 2"],
+						"0.1": ["5.3 - 2", "26 - 2", "0.4 - 2"]
+					}
+				}
+			},
+			"timeline": {
+				"0.1": "v.has_blocked = 1;"
+			}
+		},
+		"animation.shield.wield_off_hand_first_person_blocking": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"shield": {
+					"rotation": [
+						"v.shield_offset = math.lerp((v.shield_offset ?? 0),(query.get_equipped_item_name == 'crossbow' && query.item_is_charged && !q.blocking),0.1); return 1;",
+						"176 - v.shield_offset * 15",
+						"-2.5 + 10.0"
+					],
+					"position": {
+						"0.0": ["-13.5 + 0.5", "-8.8 + (v.has_blocked ?? 0) * 3.2", "variable.is_using_bow ? -25 : 5.1 + (v.has_blocked ?? 0) * 1.5"],
+						"0.1": ["-13.5 + 0.5", "-5.8 + 3.2", "variable.is_using_bow ? -25 : 5.1 + 1.5"]
+					}
+				}
+			},
+			"timeline": {
+				"0.1": "v.has_blocked = 1;"
+			}
+		},
+		"animation.shield.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"shield": {
+					"position": ["c.item_slot == 'main_hand' ? -1.01 : -0.99", 9, 8.5],
+					"rotation": [-90, 0, 90],
+					"scale": ["c.item_slot == 'main_hand' ? 1.0 : -1.0", -1, "c.item_slot == 'main_hand' ? -1.0 : 1.0"]
+				}
+			}
+		}
+	}
+}
